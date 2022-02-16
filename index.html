@@ -1,28 +1,204 @@
 <!DOCTYPE html>
+
+
 <html>
-<head lang="en"> 
-    <meta charset="utf-8">
-    <title>Jonathan Opio</title>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <title>Jonathan Opio: Assingment 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/40711f8b7e.js"></script>
+
+
+
+    <style>
+        h1 {
+            font-family: "Source Sans Pro", 'san-serif';
+            /* color: white; */
+            font-size: 2.5rem;
+            line-height: 1.2;
+            /* margin-left: 12.5vw; */
+            font-weight: 300;
+            line-height: 1.375;
+            letter-spacing: -0.05em;
+            margin: 0 0 1rem 0;
+        }
+
+        h2 {
+            font-family: "Source Sans Pro", 'san-serif';
+            /* color: white; */
+            font-size: 1.5rem;
+            line-height: 0.8;
+            /* margin-left: 12.5vw; */
+            font-weight: 20;
+            line-height: 1.175;
+            letter-spacing: -0.05em;
+            margin: 0 0 1rem 0;
+        }
+
+
+        p {
+            font-family: "Source Sans Pro", 'san-serif';
+            /* color: white; */
+            text-align: left;
+            margin: 0 0 2rem 0;
+            font-weight: 50;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+
+        }
+
+        .btn-outline-dark {
+            color: black;
+            background-color: white;
+        }
+
+        .col1 {
+            /* margin-top: 30vh; */
+            width: 50%;
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 7rem 7rem 5rem 7rem;
+            align-items: center;
+        }
+
+        .col2 {
+            width: 50%;
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 7rem 7rem 5rem 7rem;
+            align-items: center;
+        }
+
+        .icon {
+            font-family: "Source Sans Pro", 'san-serif';
+            /* color: white; */
+            text-align: center;
+
+        }
+
+        #videoBackground {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+
+        footer {
+            width: 50%;
+            margin: 20 auto;
+            align-items: center;
+        }
+
+        span {
+            /* align-items: center; */
+        }
+
+        i {
+            /* background-color: white; */
+            color: black;
+            align-items: center;
+            margin-left: 12.5vw;
+        }
+
+        @media only screen and (max-width: 720px) {
+            body {
+                background-color: white;
+                font-size: 2em;
+            }
+        }
+
+        @media only screen and (max-width: 340px) {
+            body {
+                background-color: white;
+                font-size: 2em;
+            }
+        }
+    </style>
+
+
 </head>
+
+
+<body>
+
+    <div>
+        <video autoplay muted loop id="videoBackground">
+            <source src="video/website_background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="container">
+        <!-- boostrap GRID -->
+        <div class="row">
+            <div class="col1">
+                <h1> Jonathan Opio </h1>
+                <br>
+                <p>
+                    I was born in Kampala, Uganda, and have lived there most of my life. I love to play soccer
+                    (football), basketball, and cross-country. I also love to read books, play guitar and draw.
+                    I currently work as a part-time digital analyst for an e-commerce startup called Ugify, and I
+                    also helped develop the online store's frontend and the backend. I am also a Master's student
+                    at Bridgewater State Univeristy, class of 2023!
+                </p>
+
+                <br>
+                <a href="resume.pdf" class="btn btn-outline-dark rounded-pill"> My Resume</a>
+                <tr>
+                    <td>
+                        <a href="https://github.com/jonathanopio/" class="btn btn-outline-dark rounded-pill"> My
+                            Github<br></a>
+                        <br>
     
-    <body>
-        <h1> Jonathan Opio </h1>
+                    </td>
+                </tr>
+            </div>
 
-        <a href="resume.pdf">My Resume</a>
+            <div class="col2">
 
-        <!-- <h2> About Me </h2> -->
+                <!-- <span>
+                    <i class="fa fa-user-circle" aria-hidden="true">
+                        <p class="icon">My Projects</p>
+                    </i>
+                </span> -->
 
-        <p>
-        I was born in Kampala, Uganda, and have lived there most of my life. I love to play soccer (football), basketball, and cross-country. I also love to read books, play guitar and draw.
-        I currently work as a part-time digital analyst for an e-commerce startup called Ugify, and I also helped develop the online shop frontend and the backend. I am also a Master's student
-        at Bridgewater State Univeristy, scheduled to graduate in December 2023!
-        </p>
+            </div>
 
-    
+        </div>
+    </div>
 
 
-    
+</body>
 
-    
-    </body>    
+
+<footer id="footer">
+    <!-- create a grid for the footer to centralise the "My Projects icon" -->
+    <div class="row">
+        <div class="col1">
+            <span>
+                <i class="fa fa-user-circle" aria-hidden="true">
+                    <p class="icon">My Projects</p>
+               
+                </i>
+     
+            </span>
+
+
+        </div>
+
+        <div class="col"></div>
+    </div>
+
+</footer>
+
 </html>
